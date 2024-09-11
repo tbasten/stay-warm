@@ -302,5 +302,7 @@ animation = &"walk_down"
 autoplay = "idle"
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
+limit_smoothed = true
+position_smoothing_enabled = true
 
 [node name="Marker2D" type="Marker2D" parent="."]

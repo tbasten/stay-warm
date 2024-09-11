@@ -644,9 +644,11 @@ shader_parameter/modulate_color = Color(0, 0, 0, 0.733333)
 shader_parameter/black_point = Color(0, 0, 0, 0)
 shader_parameter/lights = null
 shader_parameter/number_of_lights = 1
-shader_parameter/band_radius = 54.0
-shader_parameter/band_strength = 0.3
-shader_parameter/light_radius = 64.0
+shader_parameter/band_1_radius = 80.0
+shader_parameter/band_2_radius = 65.0
+shader_parameter/band_1_strength = 0.3
+shader_parameter/band_2_strength = 0.6
+shader_parameter/light_radius = 150.0
 
 [node name="Main" type="Node2D"]
 
