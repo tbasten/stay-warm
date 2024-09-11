@@ -302,3 +302,5 @@ animation = &"walk_down"
 autoplay = "idle"
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
