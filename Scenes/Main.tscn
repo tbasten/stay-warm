@@ -640,7 +640,7 @@ sources/0 = SubResource("TileSetAtlasSource_tyoec")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_h2vrk"]
 shader = ExtResource("4_oi1at")
-shader_parameter/modulate_color = Color(0, 0, 0, 0.733333)
+shader_parameter/modulate_color = Color(0, 0, 0, 0.952941)
 shader_parameter/black_point = Color(0, 0, 0, 0)
 shader_parameter/lights = null
 shader_parameter/number_of_lights = 1
