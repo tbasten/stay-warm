@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgyeowowijr82"]
+[gd_scene load_steps=10 format=3 uid="uid://bgyeowowijr82"]
 
 [ext_resource type="Texture2D" uid="uid://xqo1171qgtnd" path="res://Assets/Fire_AnimatedPixel/Fire_Spreadsheet.png" id="1_t8asm"]
+[ext_resource type="Script" path="res://Scripts/camp_fire.gd" id="1_urd83"]
+[ext_resource type="Texture2D" uid="uid://dhl3ym2u2bhbj" path="res://Assets/Campfire/Campfire_glow.png" id="2_7xelx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jefq8"]
 radius = 5.09902
@@ -42,6 +44,7 @@ animations = [{
 }]
 
 [node name="CampFire" type="StaticBody2D"]
+script = ExtResource("1_urd83")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
@@ -54,3 +57,9 @@ sprite_frames = SubResource("SpriteFrames_vdjv5")
 animation = &"normal"
 autoplay = "normal"
 frame_progress = 0.437834
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(3.6, 2)
+texture = ExtResource("2_7xelx")
+
+[node name="ScaleTimer" type="Timer" parent="."]

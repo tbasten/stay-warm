@@ -25,3 +25,13 @@ func move_character(delta) -> void:
 
 func _physics_process(delta):
 	move_character(delta)
+
+func _process(delta: float) -> void:
+	PlayerStats.player_distance = Global.calculate_distance()
+	if PlayerStats.player_distance > 100:
+		remove_playerTemp(delta,0.5)
+
+func remove_playerTemp(delta: float, speed):
+	var temp = PlayerStats.player_temp
+	temp -= speed * delta
+	PlayerStats.player_temp = temp

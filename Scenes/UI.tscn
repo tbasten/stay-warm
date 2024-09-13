@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://70q4372bikh4"]
+
+[ext_resource type="FontFile" uid="uid://b0b51iua1kd40" path="res://Assets/Fonts/PublicPixel.ttf" id="1_dtgdd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wankd"]
+
+[sub_resource type="Theme" id="Theme_5agkf"]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/colors/font_shadow_color = Color(0, 0, 0, 0)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 16
+Label/fonts/font = ExtResource("1_dtgdd")
+Label/styles/normal = SubResource("StyleBoxEmpty_wankd")
+
+[sub_resource type="LabelSettings" id="LabelSettings_vh1bg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gu4s5"]
+
+[node name="Ui" type="Control"]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource("Theme_5agkf")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 142.0
+offset_bottom = 26.0
+grow_vertical = 2
+columns = 2
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Temp"
+label_settings = SubResource("LabelSettings_vh1bg")
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Temp"
+label_settings = SubResource("LabelSettings_gu4s5")
